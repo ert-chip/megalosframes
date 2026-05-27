@@ -1,4 +1,3 @@
-
 html {
     background-color: black;
     text-align: center;
@@ -99,4 +98,18 @@ a {
     color: gray;
     font-weight: 500;
     font-size: 2.3rem;
+}
+
+.images-container {
+  display: flex;         /* Removes extra space below images */
+  overflow:auto;
+  justify-content: center;
+  flex-wrap:wrap;
+  gap: 15px;
+}
+
+.image-container {
+    border:30px solid rgb(255, 255, 255);
+    max-width: 100%;        /* Prevents images from being wider than their parent */
+    height: 50%;       /* Maintains aspect ratio (no distortion) */
 }
